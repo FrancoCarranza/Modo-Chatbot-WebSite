@@ -1,8 +1,24 @@
+import { useState, useEffect } from "react";
 import "./NavBar.css";
 
 function NavBar(){
+
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 10);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return(
-        <div className="navBar">
+        <div className={`navBar ${scrolled ? "scroll-navBar" : ""}`}>
             <div className="logo">
                 <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
             </div>
@@ -19,7 +35,7 @@ function NavBar(){
                 </li>
             </ul>
         </div>
-    )
+    );
 }
 
 export default NavBar;

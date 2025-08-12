@@ -7,9 +7,12 @@
     width: 100%;
     z-index: 1000;
     top: 0;
-    /* border-bottom: 1px solid #1e1e1e; */
     padding: 0 40px;
     background-image: linear-gradient(180deg, #FDC5F2 0, #F8F8F8 500px);
+}
+
+.scroll-navBar{
+   border-bottom: 1px solid #1e1e1e;
 }
 
 .navBar:hover{
