@@ -10,8 +10,10 @@
 }
 
 .h1-inicio{
-    font-size: 60px;
-    font-weight: 550;
+    color: #272727;
+    font-family: 'Libertinus Serif', 'Montserrat';
+    font-size: 70px;
+    font-weight: bold;
     padding: 12px;
 }
 
