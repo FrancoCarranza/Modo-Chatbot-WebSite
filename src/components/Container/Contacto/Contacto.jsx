@@ -61,13 +61,13 @@ function Contacto(){
                 <a href="#">
                     <FontAwesomeIcon className='red-contactos-1' icon={faSquareFacebook} size='3x' />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/modochatbot/">
                     <FontAwesomeIcon className='red-contactos-2' icon={faInstagram} size='3x' />
                 </a>
                 <a href="#">
                     <FontAwesomeIcon className='red-contactos-3' icon={faLinkedin} size='3x' />
                 </a>
-                <a href="#">
+                <a href="https://www.youtube.com/channel/UC8pv8tnSQTzsbZWaAjmK5oA">
                     <FontAwesomeIcon className='red-contactos-4' icon={faYoutube} size='3x' />
                 </a>
             </div>

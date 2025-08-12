@@ -7,9 +7,10 @@
 
 html, body {
   height: 100%;
-  background-image: linear-gradient(180deg, #FDC5F2 0, #F8F8F8 500px);
+  background-color: #FFF;
+  background-image: linear-gradient(180deg, #FDC5F2 0, #FFF 600px);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: #272727; 
   line-height: 1.5;
 }
