@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .titulo-campo{
@@ -70,8 +71,9 @@
 
 .boton-contacto{
     cursor: pointer;
-    background-color: white;
-    border: 1px solid #333;
+    background-color: #333;
+    color: white;
+    border: none;
     border-radius: 10px;
     font-size: 18px;
     padding:12px 24px;
@@ -83,17 +85,25 @@
     box-shadow: 0 6px 20px rgba(51, 51, 51, 0.25);
 }
 
+.links-contactos{
+    margin-bottom: 30px;
+}
+
 .li-contactos{
     text-decoration: none;
     list-style: none;
     margin: 7px 0;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
 }
 
 .li-contactos strong{
     font-weight: 600;
     margin-left: 3px;
+}
+
+.li-contactos .tel{
+    text-decoration: none;
 }
 
 .redes-contactos{
@@ -114,40 +124,49 @@
     justify-content: center;
     margin-top: 10px;
     gap: 5px;
+    margin-bottom: 60px;
 }
 
 .red-contactos-1{
     padding: 0;
     margin: 0;
     border-radius: 10px;
-    color: #1877f2;
+    color: #333;
 }
 
 .red-contactos-1:hover{
-    background-color: #1877f2;
-    color: white;
+    color: #1877F2;
 }
 
 .red-contactos-2{
     padding: 0;
     margin: 0;
     border-radius: 10px;
-    color: #E1306C;
+    color: #333;
 }
 
 .red-contactos-2:hover{
-    background-color: #E1306C;
-    color: white;
+    color: #E4405F;
 }
 
 .red-contactos-3{
     padding: 0;
     margin: 0;
     border-radius: 10px;
-    color: #0A66C2;
+    color: #333;
 }
 
 .red-contactos-3:hover{
-    background-color:#0A66C2;
-    color: white;
+    color:  #0A66C2;
+}
+
+.red-contactos-4{
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    color: #333;
+}
+
+.red-contactos-4:hover{
+    color: #FF0000;
 }
