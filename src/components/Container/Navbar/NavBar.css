@@ -1,0 +1,81 @@
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    z-index: 1000;
+    top: 0;
+    padding: 0px 40px;
+    transition: all 0.5s ease;
+}
+
+.scroll-navBar{
+    width: 80%;
+    background-image: none;
+    background-color: #fff;
+    box-shadow: 0 2px 7px rgba(51, 51, 51, 0.25);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    top: 12px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+}
+
+.logo .logo-link{
+    height: 50px;
+    width: 135.64px;
+}
+
+.boton-derecha-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+    
+}
+
+.boton-agendar-navbar{
+    box-shadow: 0 2px 7px rgba(51, 51, 51, 0.25);
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #272727;
+    font-size: 17px;
+    font-weight: 450;
+    padding: 10px 4px;
+}
+
+.boton-agendar-navbar:hover{
+    transform: scale(1.02);
+}
+
+.botones-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.botones-navbar .link{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 450;
+    padding: 3px 12px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.botones-navbar .link:hover{
+    background-color: #e7e2e2;
+}

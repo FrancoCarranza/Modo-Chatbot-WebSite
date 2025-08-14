@@ -35,6 +35,10 @@ function NavBar(){
                     <button className="link">Contacto</button>
                 </li>
             </ul>
+
+            <div className="boton-derecha-navbar">
+                <button className="boton-agendar-navbar">Agenda tu diagnóstico</button>
+            </div>
         </div>
     );
 }
