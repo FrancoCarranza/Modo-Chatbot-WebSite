@@ -9,7 +9,7 @@ function Inicio(){
                 <p className="p-inicio">Aumentá tus ventas y atendé a tus clientes 24/7 con nuestro sistema de chatbots.</p>
                 <p className="p-inicio">Para solicitar un presupuesto o comunicarte dale clic al botón debajo.</p>
             </section>
-            <button className="boton-inicio">DALE CLIC AQUÍ Y HABLEMOS!</button>    
+            <button className="boton-inicio">Probar el bot en WhatsApp</button>    
         </div>
     )
 }

@@ -42,14 +42,14 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 20px;
-    background-color: rgba(255, 0, 146, 0.2);
+    /* background-color: rgba(255, 0, 146, 0.2); */
+    background-color: #272727;
     border: none;
     padding: 12px 24px;
     border-radius: 20px;
-    color: #ff0092;
+    color: white;
 }
 
 .boton-inicio:hover{
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 0, 146, 0.4);
+    background-color: #ff0092;
 }
