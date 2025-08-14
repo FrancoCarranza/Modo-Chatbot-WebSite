@@ -13,13 +13,14 @@
 }
 
 .scroll-navBar{
-    width: 80%;
+    width: 85%;
+    height: 75px;
     background-image: none;
     background-color: #fff;
     box-shadow: 0 2px 7px rgba(51, 51, 51, 0.25);
     border-radius: 10px;
     transition: all 0.5s ease;
-    top: 12px;
+    top: 10px;
 }
 
 .logo{

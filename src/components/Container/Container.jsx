@@ -1,8 +1,10 @@
 import NavBar from "./Navbar/NavBar";
 import Inicio from "./Inicio/Inicio";
 import Contacto from "./Contacto/Contacto";
-import "./Container.css";
+import Servicios from "./Servicios/Servicios";
 import { useEffect, useState } from "react";
+import "./Container.css";
+
 
 function Container(){
 
@@ -11,7 +13,7 @@ function Container(){
         useEffect(() => {
             const handleScroll = () => {
                 console.log(window.scrollY);
-                setScrolled(window.scrollY > 100);
+                setScrolled(window.scrollY > 434);
             };
     
             window.addEventListener("scroll", handleScroll);
@@ -25,14 +27,15 @@ function Container(){
         <div className="container">
             <NavBar/>
             <Inicio/>
+            <Servicios/>
             <Contacto/>
 
             {scrolled && (<a href="https://wa.me/XXXXXXXXXXX" 
                 className="whatsapp-float" 
                 target="_blank" 
                 rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                    alt="WhatsApp" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                        alt="WhatsApp" />
                 </a>
             )}
             
