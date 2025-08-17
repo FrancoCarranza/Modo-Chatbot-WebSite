@@ -67,3 +67,17 @@
 .container-servicio .imagen-servicios img{
     width: 200px;
 }
+
+@media(max-width:609px){
+    .titulo-servicios{
+        font-size: 40px;
+    }
+
+    .servicios-container{
+        margin: 20px;
+    }
+
+    .container-servicio{
+        margin-bottom: 80px;
+    }
+}
