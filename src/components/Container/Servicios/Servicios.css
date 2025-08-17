@@ -86,4 +86,16 @@
     .titulo-servicios{
         font-size: 30px;
     }
+
+    .container-servicio h3{
+        font-size: 25px;
+    }
+
+    .container-servicio .imagen-servicios img{
+        width: 150px;
+    }
+
+    .container-servicio p{
+        font-size: 18px;
+    }
 }
