@@ -126,37 +126,39 @@
 }
 
 @media (max-width: 960px) {
-  .boton-derecha-navbar,
-  .botones-navbar{
-    display: none;
-  }
 
-  .hamburguer{
-    display: flex;
-  }
 
-  .menu-mobile {
-    position: absolute;
-    top: 65%;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin-top: 10px;
-    z-index: 2000;
-    width: 90%;
-  }
+    .boton-derecha-navbar,
+    .botones-navbar{
+        display: none;
+    }
 
-  .botones-hamburguer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
+    .hamburguer{
+        display: flex;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 65%;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-top: 10px;
+        z-index: 2000;
+        width: 90%;
+    }
+
+    .botones-hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
   .botones-hamburguer button{
     display: flex;
@@ -170,22 +172,43 @@
     width: 100%;
     border-radius: 10px;
     padding: 10px 13px;
+    }
+
+    .botones-hamburguer button:last-child{
+        align-self: center;
+        border: 1px solid #272727;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botones-hamburguer button:last-child:hover{
+        transform: scale(1.02);
+        background-color: transparent;
+    }
+
+    .botones-hamburguer button:hover{
+        cursor: pointer;
+        background-color: #e7e2e2;
+    }
 }
 
-.botones-hamburguer button:last-child{
-    align-self: center;
-    border: 1px solid #272727;
-    width: 100%;
-    justify-content: center;
-}
+@media(max-width:600px){
 
-.botones-hamburguer button:last-child:hover{
-    transform: scale(1.02);
-    background-color: transparent;
-}
+    .navBar{
+        padding: 0px 25px;
+    }
 
-.botones-hamburguer button:hover{
-    cursor: pointer;
-    background-color: #e7e2e2;
-}
+    .scroll-navBar{
+        padding: 0 20px;
+        width: 93%;
+    }
+
+    .boton-logo-link{
+        border: none;
+        background-color: transparent;
+        width: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
 }

@@ -1,6 +1,7 @@
 import "./Inicio.css";
 
 function Inicio(){
+    console.log('aaa', document.documentElement.clientWidth);
     return(
         <div className="inicio">
             <h1 className="h1-inicio">MODO CHATBOT</h1>

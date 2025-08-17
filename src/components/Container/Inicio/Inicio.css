@@ -63,11 +63,10 @@
 
     .h1-inicio{
     font-size: 35px;
-    font-weight: 500;
-    padding: 12px;
     }
 
     .h2-inicio{
+    line-height: 1.1;
     font-size: 60px;
     }
 
@@ -88,5 +87,11 @@
 
     .h2-inicio{
         font-size: 50px;
+    }
+}
+
+@media(max-width:480px){
+    .h1-inicio{
+    font-size: 25px;
     }
 }
