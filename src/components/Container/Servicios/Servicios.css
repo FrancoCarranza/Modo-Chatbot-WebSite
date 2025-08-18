@@ -74,7 +74,7 @@
     }
 
     .servicios-container{
-        margin: 20px;
+        margin: 0px;
     }
 
     .container-servicio{
@@ -83,6 +83,13 @@
 }
 
 @media(max-width:480px){
+    .container-servicio .textos-servicios{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+    }
+
     .titulo-servicios{
         font-size: 30px;
     }
