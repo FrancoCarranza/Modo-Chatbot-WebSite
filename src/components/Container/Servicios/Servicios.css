@@ -1,3 +1,7 @@
+#servicios {
+    scroll-margin-top: 90px; /* altura del navbar */
+}
+
 .servicios{
     display: flex;
     flex-direction: column;

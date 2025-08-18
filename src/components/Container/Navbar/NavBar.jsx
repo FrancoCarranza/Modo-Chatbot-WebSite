@@ -32,8 +32,7 @@ function NavBar(){
                 <li>
                     <button 
                         className="link"
-                        onClick={() => window.scrollTo({ top: 575, behavior: 'smooth' })}
-                    >
+                        onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}                    >
                         Servicios
                     </button>
                 </li>

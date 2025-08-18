@@ -2,7 +2,7 @@ import "./Servicios.css";
 
 function Servicios(){
     return(
-        <div className="servicios">
+        <div className="servicios" id="servicios">
             <h2 className="titulo-servicios">Potencia tus ventas <strong>24/7</strong></h2>
 
             <div className="servicios-container">
