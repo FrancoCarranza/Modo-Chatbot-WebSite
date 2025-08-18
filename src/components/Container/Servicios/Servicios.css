@@ -1,5 +1,5 @@
 #servicios {
-    scroll-margin-top: 90px; /* altura del navbar */
+    scroll-margin-top: 90px;
 }
 
 .servicios{
@@ -74,6 +74,11 @@
 }
 
 @media(max-width:609px){
+
+    #servicios {
+        scroll-margin-top: 60px; 
+    }
+
     .titulo-servicios{
         font-size: 40px;
     }
@@ -88,6 +93,12 @@
 }
 
 @media(max-width:480px){
+
+    #servicios {
+        scroll-margin-top: 50px;
+    }
+
+
     .container-servicio .textos-servicios{
         display: flex;
         flex-direction: column;
