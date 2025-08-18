@@ -20,4 +20,8 @@
         align-items: center;
         justify-content: center;
     }
+
+    .texto-footer{
+        font-size: 11px;
+    }
 }
