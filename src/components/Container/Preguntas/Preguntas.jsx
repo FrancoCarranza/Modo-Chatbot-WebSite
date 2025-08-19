@@ -24,11 +24,11 @@ function Preguntas(){
                     >
                         <div className="pregunta-container">
                             <h3 className="pregunta">¿Que es Modo ChatBot?</h3>
-                            <p>{abierto1 ? "-" : "+"}</p>
+                            <p>+</p>
                         </div>
-                        {abierto1 && (
-                            <p className="respuesta">Es una herramienta que automatiza la atención y las ventas de tu negocio, respondiendo consultas y guiando a tus clientes de manera rápida y eficiente.</p>
-                        )}
+                        <p className="respuesta">
+                            Es una herramienta que automatiza la atención y las ventas de tu negocio, respondiendo consultas y guiando a tus clientes de manera rápida y eficiente.
+                        </p>
                     </button>
 
                     <button
@@ -37,13 +37,13 @@ function Preguntas(){
                     >
                         <div className="pregunta-container">
                             <h3 className="pregunta">¿Necesito saber de código para usar el bot?</h3>
-                            <p>{abierto2 ? "-" : "+"}</p>
+                            <p>+</p>
                         </div>
-                        {abierto2 && (
-                            <p className="respuesta">
+                        
+                        <p className="respuesta">
                             No. Todo se configura de forma visual y sencilla, para que puedas gestionarlo sin conocimientos técnicos.
-                            </p>
-                        )}
+                        </p>
+
                     </button>
 
                     <button
@@ -52,13 +52,12 @@ function Preguntas(){
                     >
                     <div className="pregunta-container">
                         <h3 className="pregunta">¿Qué canales soporta?</h3>
-                        <p>{abierto3 ? "-" : "+"}</p>
+                        <p>+</p>
                     </div>
-                    {abierto3 && (
-                        <p className="respuesta">
+                    
+                    <p className="respuesta">
                         Podés usarlo en WhatsApp, Instagram, Facebook Messenger y también integrarlo en tu sitio web.
-                        </p>
-                    )}
+                    </p>
                     </button>
 
                     <button
@@ -67,13 +66,12 @@ function Preguntas(){
                     >
                     <div className="pregunta-container">
                         <h3 className="pregunta">¿Se integra con mi CRM u otras herramientas?</h3>
-                        <p>{abierto4 ? "-" : "+"}</p>
+                        <p>+</p>
                     </div>
-                    {abierto4 && (
-                        <p className="respuesta">
+                    
+                    <p className="respuesta">
                         Sí. Conectamos el chatbot con CRMs, Ads, pasarelas de pago y otras herramientas para que todo trabaje en conjunto.
-                        </p>
-                    )}
+                    </p>
                     </button>
                 </div>
 
@@ -84,13 +82,12 @@ function Preguntas(){
                     >
                     <div className="pregunta-container">
                         <h3 className="pregunta">¿Cómo se personaliza la conversación?</h3>
-                        <p>{abierto5 ? "-" : "+"}</p>
+                        <p>+</p>
                     </div>
-                    {abierto5 && (
-                        <p className="respuesta">
+                    
+                    <p className="respuesta">
                         Creamos flujos a medida de tu negocio, con respuestas personalizadas y adaptadas a tu marca.
-                        </p>
-                    )}
+                    </p>
                     </button>
 
                     <button
@@ -99,13 +96,12 @@ function Preguntas(){
                     >
                     <div className="pregunta-container">
                         <h3 className="pregunta">¿Cuánto demora implementarlo?</h3>
-                        <p>{abierto6 ? "-" : "+"}</p>
+                        <p>+</p>
                     </div>
-                    {abierto6 && (
-                        <p className="respuesta">
+                    
+                    <p className="respuesta">
                         En general, entre 3 y 7 días según la complejidad del proyecto y las integraciones que necesites.
-                        </p>
-                    )}
+                    </p>
                     </button>
 
                     <button
@@ -114,13 +110,12 @@ function Preguntas(){
                     >
                     <div className="pregunta-container">
                         <h3 className="pregunta">¿Es seguro y protege los datos de mis clientes?</h3>
-                        <p>{abierto7 ? "-" : "+"}</p>
+                        <p>+</p>
                     </div>
-                    {abierto7 && (
-                        <p className="respuesta">
+                    
+                    <p className="respuesta">
                         Sí. Trabajamos con herramientas oficiales y protocolos de seguridad para resguardar la información de tus clientes.
-                        </p>
-                    )}
+                    </p>
                     </button>
 
                     <button
@@ -129,13 +124,12 @@ function Preguntas(){
                     >
                     <div className="pregunta-container">
                         <h3 className="pregunta">¿Hay soporte o tutoriales?</h3>
-                        <p>{abierto8 ? "-" : "+"}</p>
+                        <p>+</p>
                     </div>
-                    {abierto8 && (
-                        <p className="respuesta">
+                    
+                    <p className="respuesta">
                         Claro. Te acompañamos en todo el proceso y además te damos guías prácticas para que gestiones el bot sin complicaciones.
-                        </p>
-                    )}
+                    </p>
                     </button>
                 </div>
             </div>
