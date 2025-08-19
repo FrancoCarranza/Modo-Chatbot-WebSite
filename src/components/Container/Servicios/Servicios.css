@@ -56,6 +56,7 @@
 }
 
 .container-servicio p{
+    padding: 6px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -74,9 +75,6 @@
 
 @media(max-width:609px){
 
-    #servicios {
-        scroll-margin-top: 0px; 
-    }
 
     .titulo-servicios{
         font-size: 40px;
@@ -92,10 +90,6 @@
 }
 
 @media(max-width:480px){
-
-    #servicios {
-        scroll-margin-top: 0px;
-    }
 
     .container-servicio .textos-servicios{
         display: flex;

@@ -59,3 +59,26 @@
 .red-contactos-4:hover{
     color: #FF0000;
 }
+
+@media (max-width:480px){
+    .h3-contactos{
+        font-size: 25px;
+    }
+
+    .redes{
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    .red-contactos-2{
+        width: 35px;
+    }
+
+    .red-contactos-3{
+        width: 35px;
+    }
+
+    .red-contactos-4{
+        width: 35px;
+    }
+}

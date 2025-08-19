@@ -32,15 +32,25 @@ function NavBar(){
                 <li>
                     <button 
                         className="link"
-                        onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}                    >
+                        onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
+                    >
                         Servicios
                     </button>
                 </li>
                 <li>
-                    <button className="link">Nosotros</button>
+                    <button
+                        className="link"
+                    >
+                        Nosotros
+                    </button>
                 </li>
                 <li>
-                    <button className="link">Contacto</button>
+                    <button
+                        className="link"
+                        onClick={() => document.getElementById("contacto").scrollIntoView({ behavior: "smooth" })}
+                    >
+                        Contacto
+                    </button>
                 </li>
             </ul>
 
@@ -58,10 +68,11 @@ function NavBar(){
                 <div className="menu-mobile">
                     <ul className="botones-hamburguer">
                             <button
-                             onClick={()=>{
-                                window.scrollTo({ top: 575, behavior: 'smooth' });
-                                setMenuOpen(!menuOpen)
-                            }}
+                             onClick={() => {
+                                    document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })
+                                    setMenuOpen(!menuOpen)
+                                    }
+                                }
                             >
                                 Servicios
                             </button>
@@ -75,9 +86,11 @@ function NavBar(){
                             </button>
 
                             <button
-                            onClick={()=>{
-                                setMenuOpen(!menuOpen)
-                            }}
+                            onClick={() => {
+                                    document.getElementById("contacto").scrollIntoView({ behavior: "smooth" })
+                                    setMenuOpen(!menuOpen)
+                                    }
+                                }
                             >
                                 Contacto
                             </button>

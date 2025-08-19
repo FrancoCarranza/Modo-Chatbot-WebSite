@@ -5,7 +5,7 @@ import "./Contacto.css";
 
 function Contacto(){
  return(
-    <div className="contacto">
+    <div className="contacto" id="contacto">
 
         <div className='redes-contactos'>
             <h3 className='h3-contactos'>Conectá con nosotros</h3>

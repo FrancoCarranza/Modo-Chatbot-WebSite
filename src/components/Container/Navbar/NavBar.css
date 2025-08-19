@@ -119,13 +119,13 @@
 
 /* Estilos responsive Mobile */
 
-@media (min-width: 961px) {
+@media (min-width: 1101px) {
   .menu-mobile {
     display: none !important;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
 
 
     .boton-derecha-navbar,
