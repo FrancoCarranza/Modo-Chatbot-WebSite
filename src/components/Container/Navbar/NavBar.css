@@ -135,6 +135,7 @@
 
     .hamburguer{
         display: flex;
+        background-color: transparent;
     }
 
     .menu-mobile {

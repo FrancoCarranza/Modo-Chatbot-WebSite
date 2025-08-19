@@ -1,7 +1,8 @@
 import NavBar from "./Navbar/NavBar";
 import Inicio from "./Inicio/Inicio";
-import Contacto from "./Contacto/Contacto";
 import Servicios from "./Servicios/Servicios";
+import Preguntas from "./Preguntas/Preguntas";
+import Contacto from "./Contacto/Contacto";
 import { useEffect, useState } from "react";
 import "./Container.css";
 
@@ -28,6 +29,7 @@ function Container(){
             <NavBar/>
             <Inicio/>
             <Servicios/>
+            <Preguntas/>
             <Contacto/>
 
             {scrolled && (<a href="https://wa.me/XXXXXXXXXXX" 
