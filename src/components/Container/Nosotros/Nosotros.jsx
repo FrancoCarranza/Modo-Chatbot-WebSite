@@ -1,0 +1,60 @@
+import { FlipWords } from "./FlipWords";
+import "./Nosotros.css";
+
+function Nosotros(){
+
+    const logos = [
+        { src:"/modo_chatbot.png", alt:"Logo1" },
+        { src:"/modo_chatbot.png", alt:"Logo2" },
+        { src:"/modo_chatbot.png", alt:"Logo3" },
+        { src:"/modo_chatbot.png", alt:"Logo4" },
+        ];
+
+    return(
+        <div className="nosotros" id="nosotros">
+            <h2 className="titulo-nosotros">
+                Modo ChatBot: {" "}
+                <FlipWords
+                    className="flip-words"
+                    words={[" simple", " rápido", " efectivo"]}
+                />
+            </h2>
+            <p className="subtitulo-nosotros">En Modo Chatbot ayudamos a empresas y emprendedores a escalar sus ventas con chatbots inteligentes, automatizaciones y embudos digitales. Nuestro enfoque es práctico, medible y siempre orientado a resultados.</p>
+            <section className="quienes-somos">
+                <div className="textos-quienes-somos">
+                    <h3 className="titulo-quienes-somos">¿Quiénes somos?</h3>
+                    <p className="texto-quienes-somos">En ModoChatBot somos un equipo especializado en automatización de atención al cliente y ventas digitales. Nuestra misión es ayudar a negocios de todos los tamaños a optimizar su comunicación, ofreciendo soluciones simples, rápidas y efectivas.</p>
+                    <p className="texto-quienes-somos">Con experiencia en distintos rubros y un enfoque 100% personalizado, buscamos que cada empresa pueda aprovechar el potencial de la automatización para ahorrar tiempo, aumentar ventas y mejorar la experiencia de sus clientes.</p>
+                </div>
+                <div className="imagen-quienes-somos">
+                    <img src="/imagen-nosotros.png" alt="imagen modo chatbot" />
+                </div>
+            </section>
+            <section className="moving">
+                <h3 className="titulo-moving">Marcas que confían en nosotros</h3>
+                <div className="logos">
+                    <div className="logos-slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React2" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React2" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}
+
+export default Nosotros;

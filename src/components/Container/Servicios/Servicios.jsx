@@ -18,7 +18,7 @@ function Servicios(){
 
                 <div className="container-servicio">
                     <div className="imagen-servicios">
-                        <img src="/chatbot.png" alt="" />
+                        <img src="/chatbot.png" alt="funnel" />
                     </div>
                     <div className="textos-servicios segundo">
                         <h3>Chatbots Inteligentes</h3>
@@ -32,7 +32,7 @@ function Servicios(){
                         <p>Conectamos tus herramientas y plataformas para que trabajen en conjunto y puedas medir resultados en tiempo real.</p>
                     </div>   
                     <div className="imagen-servicios">
-                        <img src="/artificial-intelligence.png" alt="" />
+                        <img src="/artificial-intelligence.png" alt="funnel" />
                     </div>     
                 </div>
             </div>

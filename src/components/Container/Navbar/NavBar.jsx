@@ -40,6 +40,7 @@ function NavBar(){
                 <li>
                     <button
                         className="link"
+                        onClick={() => document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" })}
                     >
                         Nosotros
                     </button>
@@ -79,6 +80,7 @@ function NavBar(){
 
                             <button
                             onClick={()=>{
+                                document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" })
                                 setMenuOpen(!menuOpen)
                             }}
                             >
