@@ -6,6 +6,7 @@
     background-color: #121212;
     color: #f5f5f5;
     padding: 90px 0 50px 0;
+    margin-bottom: 140px;
 }
 
 .titulo-nosotros{
@@ -95,8 +96,8 @@
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
-  background: #121212;
+  margin: 60px 0;
+  background:transparent;
   width: 95%;
 }
 
