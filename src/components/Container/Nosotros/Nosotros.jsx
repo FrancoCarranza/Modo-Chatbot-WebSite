@@ -2,14 +2,6 @@ import { FlipWords } from "./FlipWords";
 import "./Nosotros.css";
 
 function Nosotros(){
-
-    const logos = [
-        { src:"/modo_chatbot.png", alt:"Logo1" },
-        { src:"/modo_chatbot.png", alt:"Logo2" },
-        { src:"/modo_chatbot.png", alt:"Logo3" },
-        { src:"/modo_chatbot.png", alt:"Logo4" },
-        ];
-
     return(
         <div className="nosotros" id="nosotros">
             <h2 className="titulo-nosotros">
