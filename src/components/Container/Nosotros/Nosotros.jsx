@@ -23,7 +23,9 @@ function Nosotros(){
                     words={[" simple", " rápido", " efectivo"]}
                 />
             </h2>
-            <p className="subtitulo-nosotros">En Modo Chatbot ayudamos a empresas y emprendedores a escalar sus ventas con chatbots inteligentes, automatizaciones y embudos digitales. Nuestro enfoque es práctico, medible y siempre orientado a resultados.</p>
+            <p className="subtitulo-nosotros">
+                Ayudamos a empresas y emprendedores a escalar sus ventas con chatbots y automatizaciones. <br />
+            Nuestro enfoque es práctico y orientado a resultados.</p>
             <section className="quienes-somos">
                 <div className="textos-quienes-somos">
                     <h3 className="titulo-quienes-somos">¿Quiénes somos?</h3>
