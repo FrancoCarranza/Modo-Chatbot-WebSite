@@ -2,6 +2,7 @@ import { FlipWords } from "./FlipWords";
 import "./Nosotros.css";
 
 function Nosotros(){
+    console.log('ancho', window.innerWidth);
     return(
         <div className="nosotros" id="nosotros">
             <h2 className="titulo-nosotros">
