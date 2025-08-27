@@ -2,7 +2,18 @@ import { FlipWords } from "./FlipWords";
 import "./Nosotros.css";
 
 function Nosotros(){
-    console.log('ancho', window.innerWidth);
+
+    const logos = [
+    "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+    ];
+
     return(
         <div className="nosotros" id="nosotros">
             <h2 className="titulo-nosotros">
@@ -27,22 +38,11 @@ function Nosotros(){
                 <h3 className="titulo-moving">Marcas que confían en nosotros</h3>
                 <div className="logos">
                     <div className="logos-slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React2" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React2" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                    {[...Array(4)].map((_, i) =>
+                        logos.map((src, idx) => (
+                        <img src={src} alt={`Logo${idx}`} key={`${i}-${idx}`} />
+                        ))
+                    )}
                     </div>
                 </div>
             </section>

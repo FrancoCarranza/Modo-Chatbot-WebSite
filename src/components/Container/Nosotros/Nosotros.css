@@ -98,25 +98,37 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 .logos {
+  position: relative;
   overflow: hidden;
   margin: 50px 0;
   background:transparent;
-  width: 95%;
+  width: 100%;
+}
+
+.logos:before,
+.logos:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 40px; /* Ajusta el ancho del fade si querés */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, #121212 0%, transparent 100%);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, #121212 0%, transparent 100%);
 }
 
 .logos:hover .logos-slide {
@@ -128,7 +140,8 @@
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-  animation: 35s slide infinite linear;
+  animation: 45s slide infinite linear;
+  width: max-content;
 }
 
 .logos-slide img {
@@ -183,6 +196,10 @@
     width: 90%;
     margin-top: 20px;
   }
+
+  .logos-slide img {
+    margin: 0 30px;
+  }
 }
 
 @media (max-width:609px){
@@ -231,6 +248,10 @@
 
   .moving .titulo-moving{
     font-size: 25px;
+  }
+
+  .logos-slide img {
+    margin: 0 20px;
   }
 }
 
