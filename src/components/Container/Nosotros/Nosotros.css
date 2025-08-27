@@ -12,6 +12,7 @@
 .titulo-nosotros{
     display: flex;
     flex-direction: row;
+    margin: 0 10px;
     font-size: 50px;
     font-weight: 500;
 }
@@ -89,6 +90,7 @@
     padding-top: 20px;
     font-size: 30px;
     font-weight: 400;
+    text-align: center;
 }
 
 @keyframes slide {
@@ -200,3 +202,44 @@
     width: 151.83px;
   }
 }
+
+@media (max-width:530px){
+  .titulo-nosotros{
+    font-size: 32px;
+  }
+
+  .titulo-nosotros .flip-words{
+    font-size: 32px;
+    width: 121.46px;
+  }
+
+  .subtitulo-nosotros{
+    font-size: 16px;
+  }
+
+  .quienes-somos .textos-quienes-somos .titulo-quienes-somos{
+    font-size: 25px;
+  }
+
+  .quienes-somos .textos-quienes-somos .texto-quienes-somos{
+    font-size: 16px;
+  }
+
+  .quienes-somos .imagen-quienes-somos img{
+    width: 300px;
+  }
+
+  .moving .titulo-moving{
+    font-size: 25px;
+  }
+}
+
+@media (max-width:370px){
+  .titulo-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 0px;
+  }
+} 
