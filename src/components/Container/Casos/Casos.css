@@ -1,0 +1,72 @@
+.casos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 90px 0 50px 0;
+}
+
+.titulo-casos{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.container-casos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin-bottom: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border: 1px solid rgb(216, 215, 215);
+  padding: 24px 16px;
+}
+
+.titulo-video{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.video-casos {
+  width: 100%;
+  padding: 0;
+}
+
+.video-casos iframe {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  background: #000;
+}
+
+.descripcion-video {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.video-casos {
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .container-casos {
+    flex-direction: column;
+    align-items: center;
+  }
+}

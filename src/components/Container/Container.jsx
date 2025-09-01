@@ -2,6 +2,7 @@ import NavBar from "./Navbar/NavBar";
 import Inicio from "./Inicio/Inicio";
 import Servicios from "./Servicios/Servicios";
 import Nosotros from "./Nosotros/Nosotros";
+import Casos from "./Casos/Casos";
 import Preguntas from "./Preguntas/Preguntas";
 import Contacto from "./Contacto/Contacto";
 import { useEffect, useState } from "react";
@@ -31,6 +32,7 @@ function Container(){
             <Inicio/>
             <Servicios/>
             <Nosotros/>
+            <Casos/>
             <Preguntas/>
             <Contacto/>
 
