@@ -167,6 +167,15 @@
       max-width: 350px;
     }
 
+    .titulo-video{
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .descripcion-video {
+      font-size: 15px;
+    }
+
     .boton-youtube {
       font-size: 16px;
       padding: 12px 17px;
