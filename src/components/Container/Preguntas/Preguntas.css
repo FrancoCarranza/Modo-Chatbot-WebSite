@@ -100,8 +100,14 @@
     }
 }
 
-@media (max-width:480px){
+@media(max-width:609px){
     .titulo-preguntas{
-        font-size: 30px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width:530px){
+    .titulo-preguntas{
+        font-size: 32px;
     }
 }

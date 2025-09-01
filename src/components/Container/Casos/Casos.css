@@ -1,20 +1,20 @@
 .casos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 90px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 90px 0 50px 0;
+  margin-bottom: 80px;
 }
 
 .titulo-casos{
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .container-casos {
   display: flex;
-  gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -23,20 +23,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
+  max-width: 300px;
   margin-bottom: 40px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-  border: 1px solid rgb(216, 215, 215);
-  padding: 24px 16px;
+  margin: 0 20px 0 20px;
 }
 
 .titulo-video{
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 12px;
-    text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .video-casos {
@@ -46,27 +41,129 @@
 
 .video-casos iframe {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   aspect-ratio: 16 / 9;
   height: auto;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
   background: #000;
 }
 
+.miniatura-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.miniatura-video {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.miniatura-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.85);
+  clip-path: polygon(30% 20%, 30% 80%, 80% 50%);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  pointer-events: none;
+}
+
+.miniatura-wrapper:hover:after{
+  background-color: rgba(255, 0, 146, 0.85);
+}
+
 .descripcion-video {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  margin-top: 16px;
+  color: #6d6c6c;
 }
 
-.video-casos {
-  margin-top: 16px;
+.canal-youtube {
+  margin-top: 32px;
+  text-align: center;
 }
 
-@media (max-width: 900px) {
-  .container-casos {
+.boton-youtube {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff0092;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.boton-youtube:hover {
+  background: #d1007a;
+}
+
+@media (max-width: 1050px) {
+  .container-video{
+    max-width: 250px;
+  }
+}
+
+@media(max-width: 890px) {
+  .container-casos{
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
+
+  .container-video{
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .video-casos iframe {
+    max-width: 400px;
+  }
+
+  .miniatura-video {
+    max-width: 400px;
+  }
+
+  .canal-youtube {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width:609px){
+    .titulo-casos{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:530px){
+    .titulo-casos{
+        font-size: 32px;
+    }
+
+    .container-video{
+      justify-content: center;
+      align-items: center;
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+
+    .video-casos iframe {
+      max-width: 350px;
+    }
+
+    .miniatura-video {
+      max-width: 350px;
+    }
 }
