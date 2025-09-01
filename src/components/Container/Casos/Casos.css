@@ -166,4 +166,9 @@
     .miniatura-video {
       max-width: 350px;
     }
+
+    .boton-youtube {
+      font-size: 16px;
+      padding: 12px 17px;
+    }
 }
