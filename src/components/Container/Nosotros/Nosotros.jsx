@@ -25,7 +25,8 @@ function Nosotros(){
             </h2>
             <p className="subtitulo-nosotros">
                 Ayudamos a empresas y emprendedores a escalar sus ventas con chatbots y automatizaciones. <br />
-            Nuestro enfoque es práctico y orientado a resultados.</p>
+                Nuestro enfoque es práctico y orientado a resultados.
+            </p>
             <section className="quienes-somos">
                 <div className="textos-quienes-somos">
                     <h3 className="titulo-quienes-somos">¿Quiénes somos?</h3>

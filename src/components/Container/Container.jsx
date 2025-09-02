@@ -3,6 +3,7 @@ import Inicio from "./Inicio/Inicio";
 import Servicios from "./Servicios/Servicios";
 import Nosotros from "./Nosotros/Nosotros";
 import Casos from "./Casos/Casos";
+import Reseñas from "./Reseñas/Reseñas";
 import Preguntas from "./Preguntas/Preguntas";
 import Contacto from "./Contacto/Contacto";
 import { useEffect, useState } from "react";
@@ -33,6 +34,7 @@ function Container(){
             <Servicios/>
             <Nosotros/>
             <Casos/>
+            <Reseñas/>
             <Preguntas/>
             <Contacto/>
 
@@ -40,8 +42,10 @@ function Container(){
                 className="whatsapp-float" 
                 target="_blank" 
                 rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                        alt="WhatsApp" />
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                        alt="WhatsApp" 
+                    />
                 </a>
             )}
             

@@ -24,7 +24,7 @@ function NavBar(){
                 <button className="boton-logo-link"
                     onClick={() => {
                         window.scrollTo({ top: 0, behavior: 'smooth' })
-                        setMenuOpen(!menuOpen)
+                        if (menuOpen) setMenuOpen(false);
                     }}
                 >
                     <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
