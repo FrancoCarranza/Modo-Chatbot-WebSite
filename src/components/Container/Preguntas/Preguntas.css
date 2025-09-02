@@ -75,7 +75,6 @@
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.7s ease-in-out, opacity 0.5s ease;
-    /* padding-top: 22px; */
     font-size: 18px;
     font-weight: 400;
     color: #666666;
@@ -109,5 +108,13 @@
 @media (max-width:530px){
     .titulo-preguntas{
         font-size: 32px;
+    }
+
+    .pregunta-container .pregunta{
+        font-size: 17px;
+    }
+
+    .container-pregunta .respuesta{
+        font-size: 16px;
     }
 }

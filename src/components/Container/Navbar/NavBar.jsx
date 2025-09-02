@@ -8,7 +8,7 @@ function NavBar(){
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 100);
+            setScrolled(window.scrollY > 50);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -22,7 +22,10 @@ function NavBar(){
         <div className={`navBar ${scrolled ? "scroll-navBar" : ""}`}>
             <div className="logo">
                 <button className="boton-logo-link"
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    onClick={() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                        setMenuOpen(!menuOpen)
+                    }}
                 >
                     <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
                 </button>

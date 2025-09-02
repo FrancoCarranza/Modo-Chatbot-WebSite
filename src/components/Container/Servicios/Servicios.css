@@ -86,11 +86,24 @@
     }
 
     .servicios-container{
-        width: 90%;
+        width: 100%;
     }
 
     .container-servicio{
         margin-bottom: 80px;
+    }
+
+    .container-servicio h3{
+        padding: 5px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;;
+    }
+
+    .container-servicio p{
+        padding: 6px;
+        font-size: 19px;
+        font-weight: 400;
     }
 }
 

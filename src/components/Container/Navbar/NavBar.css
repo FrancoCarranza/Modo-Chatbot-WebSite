@@ -56,7 +56,6 @@
     flex-direction: column;
     justify-content: center;
     width: 230px;
-    
 }
 
 .boton-agendar-navbar{
@@ -119,13 +118,13 @@
 
 /* Estilos responsive Mobile */
 
-@media (min-width: 1101px) {
+@media (min-width: 1181px) {
   .menu-mobile {
     display: none !important;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
 
 
     .boton-derecha-navbar,
@@ -136,6 +135,10 @@
     .hamburguer{
         display: flex;
         background-color: transparent;
+    }
+
+    .hamburguer:hover span{
+        background-color: #444444;
     }
 
     .menu-mobile {
@@ -193,7 +196,7 @@
     }
 }
 
-@media(max-width:600px){
+@media(max-width:900px){
 
     .navBar{
         padding: 0px 25px;
@@ -201,7 +204,7 @@
 
     .scroll-navBar{
         padding: 0 20px;
-        width: 93%;
+        width: 95%;
     }
 
     .boton-logo-link{
@@ -212,4 +215,16 @@
         margin: 0;
     }
 
+    .logo{
+        width: 110px;
+    }
+
+    .boton-logo-link{
+        width: 60px;
+    }
+
+    .logo .logo-link{
+        height: 40px;
+        width: 110px;
+    }
 }
