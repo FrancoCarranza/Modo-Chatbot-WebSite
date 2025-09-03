@@ -1,27 +1,136 @@
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     width: 100%;
+    border-top: 1px solid #1e1e1e;
+}
+
+.arriba{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding: 40px 0;
+}
+
+.arriba .logo-footer{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 44.22px;
+    border-radius: 19px;
+}
+
+.arriba .logo-footer:hover{
+    cursor: pointer;
+}
+
+.arriba .logo-footer img{
+    width: 120px;
+}
+
+.arriba .titulos-footer{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.arriba ul{
+    list-style: none;
+}
+
+.arriba .links-navegacion{
+    color: #1e1e1e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.arriba .links-navegacion:hover{
+    color: #555555;
+    cursor: pointer;
+}
+
+.arriba .navegacion-footer ul li{
+    margin-bottom: 3px;
+}
+
+.arriba .contactos-footer .numero{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+.arriba .contactos-footer .numero:hover{
+    color: #555555;
+    cursor: pointer;
+}
+
+.arriba .redes-footer .red-footer{
+    font-size: 16px;
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.arriba .redes-footer .red-footer:hover{
+    color: #555555;
+    cursor: pointer;
+}
+
+.arriba .redes-footer ul li{
+    margin-bottom: 3px;
+}
+
+.abajo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 20px;
     border-top: 1px solid #1e1e1e;
 }
 
-.texto-footer{
+.abajo .texto-footer{
     font-size: 14px;
     font-weight: 500;
 }
 
+@media (max-width:865px){
+    .arriba{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .arriba .navegacion-footer{
+        align-items: center;
+        text-align: center;
+    }
+
+    .arriba .contactos-footer{
+        align-items: center;
+        text-align: center;
+    }
+
+    .arriba .redes-footer{
+        align-items: center;
+        text-align: center;
+    }
+}
+
 @media(max-width:480px){
-    .footer{
+    .abajo{
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .texto-footer{
+    .abajo .texto-footer{
         font-size: 12px;
     }
 }
