@@ -1,9 +1,28 @@
+import { useEffect, useRef, useState } from "react";
 import "./Servicios.css";
 
 function Servicios(){
+
+    const tituloRef = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new window.IntersectionObserver(
+        ([entry]) => setVisible(entry.isIntersecting),
+        { threshold: 0.5 }
+        );
+        if (tituloRef.current) observer.observe(tituloRef.current);
+        return () => observer.disconnect();
+    }, []);
+
     return(
         <div className="servicios" id="servicios">
-            <h2 className="titulo-servicios">Potencia tus ventas <strong>24/7</strong></h2>
+            <h2 
+                className={`titulo-servicios${visible ? " animar" : ""}`}
+                ref={tituloRef}
+            >
+                Potencia tus ventas <strong>24/7</strong>
+            </h2>
 
             <div className="servicios-container">
                 <div className="container-servicio">

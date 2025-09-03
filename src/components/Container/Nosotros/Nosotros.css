@@ -14,6 +14,19 @@
     margin: 0 10px;
     font-size: 50px;
     font-weight: 500;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.titulo-nosotros.animar{
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .titulo-nosotros .flip-words{

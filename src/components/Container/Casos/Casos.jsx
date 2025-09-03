@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Casos.css";
-import { div } from "framer-motion/client";
 
 function VideoCaso({ videoId, titulo, descripcion }) {
+
   const [play, setPlay] = useState(false);
 
   return (
@@ -36,9 +36,26 @@ function VideoCaso({ videoId, titulo, descripcion }) {
 }
 
 function Casos() {
+
+  const tituloRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+      const observer = new window.IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold: 0.5 }
+      );
+      if (tituloRef.current) observer.observe(tituloRef.current);
+      return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="casos">
-      <h2 className="titulo-casos">Casos de Éxito</h2>
+      <h2 
+        ref={tituloRef}
+        className={`titulo-casos${visible ? " animar" : ""}`}
+      >
+        Casos de Éxito
+      </h2>
       <div className="container-casos">
         <VideoCaso
           videoId="4dZlyMF6nzc"

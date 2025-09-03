@@ -1,7 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Preguntas.css";
 
 function Preguntas(){
+
+    const tituloRef = useRef(null);
+    const [visible, setVisible] = useState(false);
+    useEffect(() => {
+        const observer = new window.IntersectionObserver(
+        ([entry]) => setVisible(entry.isIntersecting),
+        { threshold: 0.5 }
+        );
+        if (tituloRef.current) observer.observe(tituloRef.current);
+        return () => observer.disconnect();
+    }, []);
 
     const [abierto1, setAbierto1]=useState(false)
     const [abierto2, setAbierto2]=useState(false)
@@ -14,7 +25,12 @@ function Preguntas(){
 
     return(
         <div className="preguntas">
-            <h2 className="titulo-preguntas">Preguntas frecuentes</h2>
+            <h2 
+                ref={tituloRef}
+                className={`titulo-preguntas${visible ? " animar" : ""}`}
+            >
+                Preguntas frecuentes
+            </h2>
 
             <div className="preguntas-container">
                 <div className="izquierda-preguntas">

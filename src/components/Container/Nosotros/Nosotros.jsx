@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { FlipWords } from "./FlipWords";
 import "./Nosotros.css";
 
@@ -14,9 +15,24 @@ function Nosotros(){
     "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
     ];
 
+    const tituloRef = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new window.IntersectionObserver(
+        ([entry]) => setVisible(entry.isIntersecting),
+        { threshold: 0.5 }
+        );
+        if (tituloRef.current) observer.observe(tituloRef.current);
+        return () => observer.disconnect();
+    }, []);
+
     return(
         <div className="nosotros" id="nosotros">
-            <h2 className="titulo-nosotros">
+            <h2 
+                className={`titulo-nosotros${visible ? " animar" : ""}`}
+                ref={tituloRef}
+            >
                 Modo ChatBot: {" "}
                 <FlipWords
                     className="flip-words"
