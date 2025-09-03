@@ -6,12 +6,10 @@
     height: 100vh;
 }
 
-.titulo-reseñas{
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 60px;
-}
-
 .elfsight-app-fbb7416b-ebc2-4d7d-9e8f-fb57ceccb9a3{
     width: 80%;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.20);
+    border-radius: 8px;
 }
