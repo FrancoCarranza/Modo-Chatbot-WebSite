@@ -3,7 +3,7 @@ import "./Inicio.css";
 function Inicio(){
     console.log('aaa', document.documentElement.clientWidth);
     return(
-        <div className="inicio">
+        <div className="inicio" id="inicio">
             <h1 className="h1-inicio">MODO CHATBOT</h1>
             <h2 className="h2-inicio">Marketing <strong>Automatizado</strong></h2>
             <section className="textos-inicio">

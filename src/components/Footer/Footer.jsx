@@ -1,3 +1,4 @@
+import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faInstagram, faLinkedin, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import "./Footer.css";
@@ -7,21 +8,16 @@ function Footer(){
         <div className='footer'>
             <div className="arriba">
                 <div className="logo-footer">
-                    <button className="logo-footer"
-                    onClick={() => {
-                        window.scrollTo({ top: 0, behavior: 'smooth' })
-                        if (menuOpen) setMenuOpen(false);
-                    }}
-                >
+                <NavLink className="logo-footer" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}>
                     <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
-                </button>
+                </NavLink>
                 </div>
                 <div className="navegacion-footer">
                     <h3 className="titulos-footer">Navegación</h3>
                     <ul>
-                        <li><a className="links-navegacion" href="#nosotros">Servicios</a></li>
-                        <li><a className="links-navegacion" href="#casos">Nosotros</a></li>
-                        <li><a className="links-navegacion" href="#contacto">Contacto</a></li>
+                        <li><Link className="links-navegacion" to="/#servicios">Servicios</Link></li>
+                        <li><Link className="links-navegacion" to="/#nosotros">Nosotros</Link></li>
+                        <li><Link className="links-navegacion" to="/#contacto">Contacto</Link></li>
                     </ul>
                 </div>
                 <div className="contactos-footer">
@@ -50,8 +46,20 @@ function Footer(){
                 </div>
             </div>
             <div className="abajo">
-                <p className="texto-footer">Copyright © 2025 Modochatbot</p>
-                <p className="texto-footer"> - Todos los derechos reservados - </p>
+                <p className="texto-footer">© 2025 Modo ChatBot. Todos los derechos reservados.</p>
+                <NavLink 
+                    className="texto-footer nav" 
+                    to="/privacy-policy"
+                    onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+                >
+                    Política de privacidad
+                </NavLink>
+                <NavLink className="texto-footer nav" 
+                    to="/terms-and-conditions"
+                    onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+                >
+                    Términos y Condiciones
+                </NavLink>
             </div>
         </div>
     )

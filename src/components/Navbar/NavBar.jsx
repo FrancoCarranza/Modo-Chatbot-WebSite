@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./NavBar.css";
 
@@ -21,40 +22,40 @@ function NavBar(){
     return(
         <div className={`navBar ${scrolled ? "scroll-navBar" : ""}`}>
             <div className="logo">
-                <button className="boton-logo-link"
+                <NavLink className="boton-logo-link" to="/"
                     onClick={() => {
                         window.scrollTo({ top: 0, behavior: 'smooth' })
                         if (menuOpen) setMenuOpen(false);
                     }}
                 >
                     <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
-                </button>
+                </NavLink>
             </div>
 
             <ul className="botones-navbar">
                 <li>
-                    <button 
+                    <NavLink 
                         className="link"
-                        onClick={() => document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })}
+                        to="/#servicios"
                     >
                         Servicios
-                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <button
+                    <NavLink
                         className="link"
-                        onClick={() => document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" })}
+                        to="/#nosotros"
                     >
                         Nosotros
-                    </button>
+                    </NavLink>
                 </li>
                 <li>
-                    <button
+                    <NavLink
                         className="link"
-                        onClick={() => document.getElementById("contacto").scrollIntoView({ behavior: "smooth" })}
+                        to="/#contacto"
                     >
                         Contacto
-                    </button>
+                    </NavLink>
                 </li>
             </ul>
 
@@ -71,7 +72,8 @@ function NavBar(){
             {menuOpen && (
                 <div className="menu-mobile">
                     <ul className="botones-hamburguer">
-                            <button
+                            <NavLink to={"/#servicios"}
+                            className={"links-hamburguer"}
                              onClick={() => {
                                     document.getElementById("servicios").scrollIntoView({ behavior: "smooth" })
                                     setMenuOpen(!menuOpen)
@@ -79,18 +81,20 @@ function NavBar(){
                                 }
                             >
                                 Servicios
-                            </button>
+                            </NavLink>
 
-                            <button
+                            <NavLink to={"/#nosotros"}
+                            className={"links-hamburguer"}
                             onClick={()=>{
                                 document.getElementById("nosotros").scrollIntoView({ behavior: "smooth" })
                                 setMenuOpen(!menuOpen)
                             }}
                             >
                                 Nosotros
-                            </button>
+                            </NavLink>
 
-                            <button
+                            <NavLink to={"/#contacto"}
+                            className={"links-hamburguer"}
                             onClick={() => {
                                     document.getElementById("contacto").scrollIntoView({ behavior: "smooth" })
                                     setMenuOpen(!menuOpen)
@@ -98,9 +102,10 @@ function NavBar(){
                                 }
                             >
                                 Contacto
-                            </button>
+                            </NavLink>
 
                             <button
+                            className="links-hamburguer"
                             onClick={()=>{
                                 setMenuOpen(!menuOpen)
                             }}

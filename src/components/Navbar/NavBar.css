@@ -82,6 +82,8 @@
 }
 
 .botones-navbar .link{
+    color: black;
+    text-decoration: none;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -164,7 +166,7 @@
         align-items: flex-start;
     }
 
-  .botones-hamburguer button{
+  .botones-hamburguer .links-hamburguer{
     display: flex;
     flex-direction: row;
     justify-content: first baseline;
@@ -176,21 +178,22 @@
     width: 100%;
     border-radius: 10px;
     padding: 10px 13px;
+    text-decoration: none;
     }
 
-    .botones-hamburguer button:last-child{
+    .botones-hamburguer .links-hamburguer:last-child{
         align-self: center;
         border: 1px solid #272727;
         width: 100%;
         justify-content: center;
     }
 
-    .botones-hamburguer button:last-child:hover{
+    .botones-hamburguer .links-hamburguer:last-child:hover{
         transform: scale(1.02);
         background-color: transparent;
     }
 
-    .botones-hamburguer button:hover{
+    .botones-hamburguer .links-hamburguer:hover{
         cursor: pointer;
         background-color: #e7e2e2;
     }

@@ -33,11 +33,14 @@ function Nosotros(){
                 className={`titulo-nosotros${visible ? " animar" : ""}`}
                 ref={tituloRef}
             >
-                Modo ChatBot: {" "}
-                <FlipWords
-                    className="flip-words"
-                    words={[" simple", " rápido", " efectivo"]}
-                />
+                <span>Modo ChatBot:</span>
+                <div>
+                    <FlipWords
+                        className="flip-words"
+                        words={[" simple", " rápido", " efectivo"]}
+                        duration={3000}
+                    />
+                </div>
             </h2>
             <p className="subtitulo-nosotros">
                 Ayudamos a empresas y emprendedores a escalar sus ventas con chatbots y automatizaciones. <br />
