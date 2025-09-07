@@ -8,8 +8,9 @@
 
 .elfsight-app-fbb7416b-ebc2-4d7d-9e8f-fb57ceccb9a3{
     width: 80%;
-    max-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0,0,0,0.20);
-    border-radius: 8px;
+    border-radius: 16px;
 }

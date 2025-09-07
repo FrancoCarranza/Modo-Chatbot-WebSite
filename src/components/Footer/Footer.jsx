@@ -34,11 +34,11 @@ function Footer(){
                             <FontAwesomeIcon icon={faInstagram} size='lg' />
                             {' modochatbot'}
                         </a></li>
-                        <li><a href="https://www.linkedin.com/in/pablo-hernandez-123456789/" className='red-footer'>
+                        <li><a href="https://www.linkedin.com/in/pablo-hernandez-modochatbot" className='red-footer'>
                             <FontAwesomeIcon icon={faLinkedin} size='lg' />
                             {' Pablo Hernandez'}
                         </a></li>
-                        <li><a href="https://www.youtube.com/channel/UC123456789" className='red-footer'>
+                        <li><a href="https://www.youtube.com/channel/UC8pv8tnSQTzsbZWaAjmK5oA" className='red-footer'>
                             <FontAwesomeIcon icon={faYoutube} size='lg' />
                             {' ModoChatbot'}
                         </a></li>
@@ -46,7 +46,8 @@ function Footer(){
                 </div>
             </div>
             <div className="abajo">
-                <p className="texto-footer">© 2025 Modo ChatBot. Todos los derechos reservados.</p>
+                <p className="texto-footer">© 2025 Modo ChatBot.</p>
+                <p className="texto-footer"> Todos los derechos reservados.</p>
                 <NavLink 
                     className="texto-footer nav" 
                     to="/privacy-policy"

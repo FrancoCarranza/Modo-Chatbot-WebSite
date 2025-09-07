@@ -1,4 +1,4 @@
-import NavBar from "../Navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import Inicio from "./Inicio/Inicio";
 import Servicios from "./Servicios/Servicios";
 import Nosotros from "./Nosotros/Nosotros";

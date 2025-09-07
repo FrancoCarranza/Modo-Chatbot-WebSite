@@ -33,6 +33,9 @@
 }
 
 .boton-logo-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: none;
     background-color: transparent;
     width: 135.64px;

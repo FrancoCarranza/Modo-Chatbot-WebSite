@@ -1,4 +1,4 @@
-import NavBar from "../Navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import "./Politicas.css";
 
 function Politicas() {
