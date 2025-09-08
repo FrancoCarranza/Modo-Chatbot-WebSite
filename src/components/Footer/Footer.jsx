@@ -22,7 +22,7 @@ function Footer(){
                 </div>
                 <div className="contactos-footer">
                     <h3 className="titulos-footer">Contactos</h3>
-                    <a href="#whatsapp" className='numero'>
+                    <a href="" className='numero'>
                         <FontAwesomeIcon icon={faWhatsapp} size='lg' />
                         {' +54 9 351 516-0101'}
                     </a>
