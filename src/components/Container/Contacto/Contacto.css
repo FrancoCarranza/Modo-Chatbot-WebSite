@@ -52,6 +52,11 @@
     font-weight: 400;
 }
 
+.telefono-contactos a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .redes-container{
     display: flex;
     flex-direction: column;
