@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <Rutas/>
-      <Footer/>
+      <Rutas />
+      <Footer />
     </>
   )
 }

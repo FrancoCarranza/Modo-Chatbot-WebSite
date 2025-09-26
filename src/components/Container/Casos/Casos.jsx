@@ -18,14 +18,14 @@ function VideoCaso({ videoId, titulo, descripcion }) {
             className="miniatura-video"
           />
         ) : (
-            <div className="miniatura-wrapper">
-                <img
-                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                    alt={titulo}
-                    className="miniatura-video"
-                    onClick={() => setPlay(true)}
-                    style={{ cursor: "pointer" }}
-                />
+          <div className="miniatura-wrapper">
+            <img
+              src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+              alt={titulo}
+              className="miniatura-video"
+              onClick={() => setPlay(true)}
+              style={{ cursor: "pointer" }}
+            />
           </div>
         )}
       </div>
@@ -40,17 +40,17 @@ function Casos() {
   const tituloRef = useRef(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
-      const observer = new window.IntersectionObserver(
+    const observer = new window.IntersectionObserver(
       ([entry]) => setVisible(entry.isIntersecting),
       { threshold: 0.5 }
-      );
-      if (tituloRef.current) observer.observe(tituloRef.current);
-      return () => observer.disconnect();
+    );
+    if (tituloRef.current) observer.observe(tituloRef.current);
+    return () => observer.disconnect();
   }, []);
 
   return (
     <div className="casos">
-      <h2 
+      <h2
         ref={tituloRef}
         className={`titulo-casos${visible ? " animar" : ""}`}
       >
@@ -75,12 +75,12 @@ function Casos() {
       </div>
       <div className="canal-youtube">
         <a
-            href="https://www.youtube.com/@modochatbot" // Usá el link real del canal
-            target="_blank"
-            rel="noopener noreferrer"
-            className="boton-youtube"
+          href="https://www.youtube.com/@modochatbot" // Usá el link real del canal
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-youtube"
         >
-            Ver más casos en nuestro canal de YouTube
+          Ver más casos en nuestro canal de YouTube
         </a>
       </div>
     </div>

@@ -1,23 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import "./Servicios.css";
 
-function Servicios(){
+function Servicios() {
 
     const tituloRef = useRef(null);
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         const observer = new window.IntersectionObserver(
-        ([entry]) => setVisible(entry.isIntersecting),
-        { threshold: 0.5 }
+            ([entry]) => setVisible(entry.isIntersecting),
+            { threshold: 0.5 }
         );
         if (tituloRef.current) observer.observe(tituloRef.current);
         return () => observer.disconnect();
     }, []);
 
-    return(
+    return (
         <div className="servicios" id="servicios">
-            <h2 
+            <h2
                 className={`titulo-servicios${visible ? " animar" : ""}`}
                 ref={tituloRef}
             >
@@ -49,10 +49,10 @@ function Servicios(){
                     <div className="textos-servicios primero">
                         <h3>Integraciones y Seguimiento</h3>
                         <p>Conectamos tus herramientas y plataformas para que trabajen en conjunto y puedas medir resultados en tiempo real.</p>
-                    </div>   
+                    </div>
                     <div className="imagen-servicios">
                         <img src="/artificial-intelligence.png" alt="funnel" />
-                    </div>     
+                    </div>
                 </div>
             </div>
         </div>

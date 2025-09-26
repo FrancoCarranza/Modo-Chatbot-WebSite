@@ -3,21 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import "./Contacto.css";
 
-function Contacto(){
+function Contacto() {
 
     const tituloRef = useRef(null);
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         const observer = new window.IntersectionObserver(
-        ([entry]) => setVisible(entry.isIntersecting),
-        { threshold: 0.5 }
+            ([entry]) => setVisible(entry.isIntersecting),
+            { threshold: 0.5 }
         );
         if (tituloRef.current) observer.observe(tituloRef.current);
         return () => observer.disconnect();
     }, []);
 
-    return(
+    return (
         <div className="contacto" id="contacto">
 
             <div className='redes-contactos'>

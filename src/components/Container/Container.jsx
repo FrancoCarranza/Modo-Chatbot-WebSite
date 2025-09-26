@@ -10,45 +10,45 @@ import { useEffect, useState } from "react";
 import "./Container.css";
 
 
-function Container(){
+function Container() {
 
     const [scrolled, setScrolled] = useState(false)
-    
-        useEffect(() => {
-            const handleScroll = () => {
-                console.log(window.scrollY);
-                setScrolled(window.scrollY > 434);
-            };
-    
-            window.addEventListener("scroll", handleScroll);
-    
-            return () => {
-                window.removeEventListener("scroll", handleScroll);
-            };
-        }, []);
 
-    return(
+    useEffect(() => {
+        const handleScroll = () => {
+            console.log(window.scrollY);
+            setScrolled(window.scrollY > 434);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    return (
         <div className="container">
-            <NavBar/>
-            <Inicio/>
-            <Servicios/>
-            <Nosotros/>
-            <Casos/>
-            <Reseñas/>
-            <Preguntas/>
-            <Contacto/>
+            <NavBar />
+            <Inicio />
+            <Servicios />
+            <Nosotros />
+            <Casos />
+            <Reseñas />
+            <Preguntas />
+            <Contacto />
 
-            {scrolled && (<a href="https://wa.me/XXXXXXXXXXX" 
-                className="whatsapp-float" 
-                target="_blank" 
+            {scrolled && (<a href="https://wa.me/XXXXXXXXXXX"
+                className="whatsapp-float"
+                target="_blank"
                 rel="noopener noreferrer">
-                    <img 
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                        alt="WhatsApp" 
-                    />
-                </a>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    alt="WhatsApp"
+                />
+            </a>
             )}
-            
+
         </div>
     )
 }

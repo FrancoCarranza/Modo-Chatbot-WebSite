@@ -2,17 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import { FlipWords } from "./FlipWords";
 import "./Nosotros.css";
 
-function Nosotros(){
+function Nosotros() {
 
     const logos = [
-    "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
     ];
 
     const tituloRef = useRef(null);
@@ -20,16 +20,16 @@ function Nosotros(){
 
     useEffect(() => {
         const observer = new window.IntersectionObserver(
-        ([entry]) => setVisible(entry.isIntersecting),
-        { threshold: 0.5 }
+            ([entry]) => setVisible(entry.isIntersecting),
+            { threshold: 0.5 }
         );
         if (tituloRef.current) observer.observe(tituloRef.current);
         return () => observer.disconnect();
     }, []);
 
-    return(
+    return (
         <div className="nosotros" id="nosotros">
-            <h2 
+            <h2
                 className={`titulo-nosotros${visible ? " animar" : ""}`}
                 ref={tituloRef}
             >
@@ -60,11 +60,11 @@ function Nosotros(){
                 <h3 className="titulo-moving">Marcas que confían en nosotros</h3>
                 <div className="logos">
                     <div className="logos-slide">
-                    {[...Array(4)].map((_, i) =>
-                        logos.map((src, idx) => (
-                        <img src={src} alt={`Logo${idx}`} key={`${i}-${idx}`} />
-                        ))
-                    )}
+                        {[...Array(4)].map((_, i) =>
+                            logos.map((src, idx) => (
+                                <img src={src} alt={`Logo${idx}`} key={`${i}-${idx}`} />
+                            ))
+                        )}
                     </div>
                 </div>
             </section>

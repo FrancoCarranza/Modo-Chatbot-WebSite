@@ -1,16 +1,16 @@
 import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp, faInstagram, faLinkedin, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import "./Footer.css";
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <div className='footer'>
             <div className="arriba">
                 <div className="logo-footer">
-                <NavLink className="logo-footer" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}>
-                    <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
-                </NavLink>
+                    <NavLink className="logo-footer" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}>
+                        <img className="logo-link" src="/modo_chatbot.png" alt="Logo ModoChatbot" />
+                    </NavLink>
                 </div>
                 <div className="navegacion-footer">
                     <h3 className="titulos-footer">Navegación</h3>
@@ -48,14 +48,14 @@ function Footer(){
             <div className="abajo">
                 <p className="texto-footer">© 2025 Modo ChatBot.</p>
                 <p className="texto-footer"> Todos los derechos reservados.</p>
-                <NavLink 
-                    className="texto-footer nav" 
+                <NavLink
+                    className="texto-footer nav"
                     to="/privacy-policy"
                     onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
                 >
                     Política de privacidad
                 </NavLink>
-                <NavLink className="texto-footer nav" 
+                <NavLink className="texto-footer nav"
                     to="/terms-and-conditions"
                     onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
                 >

@@ -4,13 +4,13 @@ import Politicas from "./components/Politicas/Politicas";
 import Terminos from "./components/Terminos/Terminos";
 import NotFound from "./components/NotFound/NotFound";
 
-function Rutas(){
-    return(
+function Rutas() {
+    return (
         <Routes>
-            <Route path='/' element={<Container/>}/>
-            <Route path='/privacy-policy' element={<Politicas/>}/>
-            <Route path='/terms-and-conditions' element={<Terminos/>}/>
-            <Route path='/*' element={<NotFound/>}/>
+            <Route path='/' element={<Container />} />
+            <Route path='/privacy-policy' element={<Politicas />} />
+            <Route path='/terms-and-conditions' element={<Terminos />} />
+            <Route path='/*' element={<NotFound />} />
         </Routes>
     )
 }
